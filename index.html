@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Example</title>
+    <style>
+      body {
+    margin: 0;
+    padding: 0;
+    background-color: lavender;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background-color: lavender;
+    padding: 10px;
+    display: flex;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    text-align: center;
+    gap: 10px;
+}
+
+.navbar li {
+    display: inline;
+    margin-right: 10px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    
+    
+    
+}
+
+.navbar a {
+    text-decoration: none;
+    padding: 5px 10px;
+    color: #333;
+    transition-duration: 0.5s;
+    border-radius: 10px;
+}
+
+.navbar a:hover {
+    background-color: black;
+    color: white;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.main { 
+    
+    width: 90%;
+    
+}
+
+.info {
+   
+    height: 45vh;
+    width: 80vw;
+    margin: auto;
+    margin-top: 100px;
+    height: 78vh;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 180px;
+    
+}
+.devpic img {
+    height: 60vh;
+    mix-blend-mode: multiply;
+
+}  
+.devinfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hello{
+    font-size: 50px;
+    font-family: 'Source Code Pro', monospace;
+    display: flex;
+}
+.name{
+    font-size: 30px;
+    font-family: 'Source Serif 4', serif;
+    display: flex;
+}
+.about{
+    font-size: 23px;
+    font-family: 'Source Code Pro', monospace;
+    display: flex;
+}
+.gifhello img {
+    width: 500px;
+    padding-top: 70px;
+}
+.about2 {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Mulish', sans-serif;
+    
+}
+.me {
+    padding-top: 170px;
+    font-size: 40px;
+    font-family: 'Outfit', sans-serif;
+}
+.paraintro {
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bolder;
+}
+
+
+.work {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 40px;
+
+}
+.btn button{
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    transition-duration: 1s;
+}
+.btn button:hover{
+    background-color: black;
+    color: white;
+
+}
+
+.line {
+    width: 27px;
+    background-color: black;
+    height: 4px;
+    margin: 2px;        
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+.box {
+  background-color: lavender;
+  height: 200px;
+  width: 600px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  margin-left: 450px;
+  border-radius: 23px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bolder;
+}
+.skills {
+  text-align: center;
+  font-size: 35px;
+  font-family: 'Outfit', sans-serif;
+}
+.work {
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+  border-right: 5px solid;
+  animation: typing 4s steps(30) infinite, cursor 5s step-end infinite alternate;
+  
+}
+.box2{
+  height: 200px;
+  width: 900px;
+  background-color: lavender;
+  border-radius: 23px;
+  box-shadow:rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px; ;
+}
+.boom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 100px;
+  align-items: center;
+  margin-top: 60px;
+  padding-left: 320px;
+  padding-right: 300px;
+  
+}
+.box3{
+  height: 200px;
+  width: 900px;
+  background-color: lavender;
+  border-radius: 23px;
+  box-shadow:rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px; ;
+}
+.box4{
+  height: 200px;
+  width: 900px;
+  background-color: lavender;
+  border-radius: 23px;
+  box-shadow:rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px; ;
+}
+.box2 img {
+  height: 200px;
+  width: 200px;
+  padding-left: 7px;
+  padding-right: 5px;
+}
+.box3 img {
+  padding-top: 20px;
+  height: 150px;
+  margin-left: 40px;
+}
+.box4 img {
+  padding-top: 20px;
+  height: 150px;
+  margin-left: 40px;
+}
+footer{
+  height: 40px;
+  background-color: lavenderblush;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+@keyframes cursor {
+
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) {
+            body {
+                margin: 0;
+                padding: 0;
+                background-color: lavender;
+            }
+        }
+
+        /* CSS for mobile devices */
+        @media only screen and (max-width: 767px) {
+            body {
+                display: none;
+            }
+        }
+@media only screen and (max-width:2000px){
+  .burger{
+    display: block;
+  }
+  .hidemenu {
+    visibility: hidden;
+  }
+}
+
+    </style>       
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,200&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+   
+    <div class="navbar">
+      <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    <br>
+        <ul class="menu hidemenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+        
+        
+      </div>
+    </div>
+      
+      
+      </div>
+      <div class="main">
+          <div class="info">
+              <div class="devinfo">
+                  <div class="hello">Hi i am </div>
+                  <div class="name">Hardik Batra.</div>
+                  <div class="work">Web developer</div>
+                  <div class="btn">
+                      <button>Contact me</button>
+                  </div>
+              </div>              
+              <div class="devpic"><img src="/working.jpg"></div>
+              </div>
+          </div>       
+      </div> 
+  </div>
+  <div class="about2">
+      <div class="gifhello"><img src="/waving-287.gif"></div>
+      <div class="me"><h2>About</h2>
+      <div class="paraintro"><p>I am Hardik, a passionate freelancer bringing you programming and design from the future.
+           My expertise is developing next-level websites and web applications.</p></div>
+      </div>  
+  </div>
+  <br>
+  <br> 
+  <div class="skills"><h1>MY SKILLS</h1></div>
+  <br>
+  <div class="box">
+    <p>Learning is a Great process of becoming more Expert with the experience that come as a reward, 
+      my passion of learning about the latest and the in-demand Technology made me master in these skills.</p>
+    
+  </div>
+  <br>
+  <br>
+  <div class="boom">
+    <div class="box2"><img src="/css3-logo-png-transparent.png"></div>
+    <div class="box3"><img src="/images-removebg-preview.png"></div>
+    <div class="box4"><img src="/react-icon-512x456-5xl7nmtw.png"></div>
+
+  </div>
+
+  <br>
+  <br>
+  <footer>
+    <h3>thats all folks</h3>
+  </footer>
+  <script>
+    burger= document.querySelector(".burger")
+    menu= document.querySelector(".menu")
+
+
+    burger.addEventListener("click", ()=>{
+      menu.classList.toggle('hidemenu')
+        
+    })
+  </script>  
+</body>
+</html>
