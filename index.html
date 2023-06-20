@@ -227,6 +227,47 @@ html {
   height: 150px;
   margin-left: 40px;
 }
+.lc{
+  text-align: center;
+  font-size: 35px;
+  font-family: 'Outfit', sans-serif;  
+  padding-top: 50px;
+}
+.box5 {
+  margin-left: 500px;
+  background-color: lavender;
+  height: 400px;
+  width: 500px;
+  margin-top: 50px;
+  box-shadow:rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px; 
+  border-radius: 20px;
+}
+.box5 form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  column-gap: 5px;
+  row-gap: 10px;
+  font-family: 'Outfit', sans-serif;
+  font-weight: bolder;
+}
+.box5 form button{
+  font-weight: bold;
+  width: 130px;
+  height: 45px;
+  margin-left: 35%;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  transition-duration: 1s;
+}
+.box5 form button:hover{
+  background-color: black;
+  color: white;
+}
 footer{
   height: 40px;
   background-color: lavenderblush;
@@ -360,6 +401,17 @@ footer{
   </div>
 
   <br>
+  <br>
+  <div class="lc"><h1>Lets Connect!</h1></div>
+  <div class="box5">
+    <form>
+        Name: <input type="text" style="height: 30px; border-radius: 10px;" >
+        Email id: <input type="text" style="height: 30px; border-radius: 10px;">
+        Whats Your Concern: <input type="text" style="height: 100px; border-radius: 10px;">
+        <button>SUBMIT</button>
+     </form>
+
+  </div>
   <br>
   <footer>
     <h3>thats all folks</h3>
